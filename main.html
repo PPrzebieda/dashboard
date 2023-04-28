@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard-main">
+      <div class="dashboard-left">
+        <div class="button-container">
+          <a href="https://facebook.com">
+            <button class="btn-sample">
+              <img src="facebook.png" alt="settings_ico" />
+            </button>
+          </a>
+          <a href="https://facebook.com">
+            <button class="btn-sample">
+              <img src="gmail.png" alt="settings_ico" /></button
+          ></a>
+          <button class="btn-sample">
+            <img src="github.png" alt="settings_ico" />
+          </button>
+          <button class="btn-sample">
+            <img src="youtube.png" alt="settings_ico" />
+          </button>
+          <button class="btn-sample">
+            <img src="spotify.png" alt="settings_ico" />
+          </button>
+          <button class="btn-sample">
+            <img src="netflix.png" alt="settings_ico" />
+          </button>
+          <button class="btn-sample">
+            <img src="setting.png" alt="settings_ico" />
+          </button>
+        </div>
+        <div
+          style="left: 0; width: 100%; height: 152px; position: relative"
+          class="spotify-player"
+        >
+          <iframe
+            style="border-radius: 12px"
+            class="iframe-spotify"
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1E38OcpjUDhMCT?utm_source=generator"
+            width="100%"
+            height="152"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <div id="embed-iframe"></div>
+      </div>
+      <div class="dashboard-center">
+        <button class="moreBtn openBtn"></button>
+        <button class="moreBtn closeBtn hide"></button>
+        <div class="clock">
+          <div class="time-box">
+            <span class="day">Sobota</span>
+            <span class="date">10 Grudnia</span>
+            <span class="time">23:00</span>
+          </div>
+          <div class="weather-box">
+            <div class="icon"></div>
+            <span class="temperature">36°C</span>
+            <span class="description">Broken Clouds</span>
+            <span class="localization">Kraków, PL</span>
+          </div>
+
+          <div class="more-info hide">
+            <!-- <hr /> -->
+            <div class="box">
+              <span class="day-of-year">Dziś jest 356 dzień roku</span>
+              <span class="new-year">Do końca roku pozostało:</span>
+              <span class="new-year-counter">365 dni 24 godziny 32 minuty</span>
+            </div>
+            <div class="box">
+              <span class="feels-temp">Temperatura odczuwalna: 46°C</span>
+              <span class="pressure">Ciśnienie: 1019hPa</span>
+              <span class="humidity">Wilgotność 78%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-right"></div>
+    </div>
+    <script src="clockWidget.js"></script>
+    <script src="weatherWidget.js"></script>
+    <script
+      src="https://open.spotify.com/embed-podcast/iframe-api/v1"
+      async
+    ></script>
+  </body>
+</html>
